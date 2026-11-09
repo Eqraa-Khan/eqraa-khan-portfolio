@@ -1,0 +1,25 @@
+.experience { color: var(--paper); background: var(--rose); }
+.experience-heading { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-block: 2.8rem 2rem; }
+.experience-heading h2 { margin: 0; font-size: clamp(2.4rem, 4vw, 4.1rem); line-height: 1.35; letter-spacing: -.06em; }
+.experience-heading h2 em { color: var(--green); font-style: normal; }
+.experience-heading > p { max-width: 290px; margin: 0 .4rem .3rem 0; color: #f0d7df; font-size: .85rem; line-height: 1.8; }
+.experience-list { border-top: 1px solid #ffffff47; }
+.experience-item { display: grid; grid-template-columns: 55px 1fr 30px; gap: 1.2rem; align-items: start; padding: 1.6rem 0; border-bottom: 1px solid #ffffff47; }
+.experience-number { padding-top: .25rem; color: var(--green); font: .7rem var(--mono); }
+.experience-item h3 { margin: 0 0 .25rem; font-size: 1.25rem; letter-spacing: -.04em; }
+.experience-org { margin-bottom: .6rem; color: var(--green-pale); font-size: .83rem; }
+.experience-org a:hover { text-decoration: underline; text-underline-offset: .2em; }
+.experience-org span { color: var(--green); }
+.experience-description { max-width: 650px; margin: 0; color: #f0d7df; font-size: .82rem; line-height: 1.75; }
+.experience-flower { color: var(--green); }
+.education-note, .recognition-note { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; margin-top: 1.7rem; padding: 1rem 1.2rem; border: 1px solid #ffffff47; }
+.education-note > span, .recognition-note > span { flex: 0 0 auto; font: .58rem var(--mono); letter-spacing: .08em; }
+.education-note p, .recognition-note p { margin: 0; font-size: .78rem; line-height: 1.6; }
+.recognition-note { border-color: #dcbfc8; color: var(--rose-deep); }
+.recognition-note > span { color: var(--rose); }
+@media (max-width: 760px) {
+  .experience-heading { align-items: flex-start; flex-direction: column; gap: .8rem; margin-block: 2rem; }
+  .experience-heading h2 { font-size: clamp(2.2rem, 9vw, 3.3rem); }
+  .experience-item { grid-template-columns: 30px 1fr 20px; gap: .75rem; }
+  .education-note, .recognition-note { align-items: flex-start; flex-direction: column; gap: .6rem; }
+}

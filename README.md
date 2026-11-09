@@ -1,6 +1,6 @@
 # Eqraa Khan — Portfolio
 
-A small, responsive personal portfolio with a playful pastel palette, illustrated landing scene, and a clear separation between content, components, and presentation. It uses native JavaScript modules without a build step.
+A personal portfolio highlighting Eqraa’s computer science studies, community involvement, and selected projects. The site uses a playful pastel palette and native JavaScript modules, with content separated from UI components and styling.
 
 ## Structure
 
@@ -8,6 +8,7 @@ A small, responsive personal portfolio with a playful pastel palette, illustrate
 index.html
 assets/
   css/styles.css
+  css/experience.css
   js/main.js
 src/
   data/content.js
@@ -15,6 +16,7 @@ src/
     Header.js
     Hero.js
     About.js
+    Experience.js
     Projects.js
     Contact.js
   app.js
@@ -22,6 +24,6 @@ src/
 
 ## Personalize
 
-Update `src/data/content.js` to change the introduction, about text, skills, contact details, social links, and project cards. Projects accept `name`, `description`, optional `tags`, and optional `url` fields.
+Update `src/data/content.js` to edit the biography, education, recognition, roles, project cards, skills, and social links. Project entries accept `name`, `description`, `tags`, and an optional `url`.
 
-Open the site through a local web server so the browser can load ES modules. To publish with GitHub Pages, select the `main` branch and `/ (root)` as the source.
+Run from a local web server so the browser can load ES modules. For GitHub Pages, select the `main` branch and `/ (root)` as the publishing source.
